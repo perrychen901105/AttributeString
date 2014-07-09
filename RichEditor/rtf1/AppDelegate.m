@@ -13,6 +13,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    int i = 37;
+    
+    float floatf = *(float*)&i;
+
+    NSLog(@"%f,%f",floatf,(float)i);
     return YES;
 }
 							
