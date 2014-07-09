@@ -5,43 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>66153C42-1A05-46AE-8F0F-846972D2AB6A</string>
+	<string>02CB70DA-6807-4550-BCFF-B617A8DA2388</string>
 	<key>IDESourceControlProjectName</key>
 	<string>RichEditor</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>A15DEEC7-8A5D-4FAF-9E46-595046BF27A6</key>
-		<string>https://github.com/perrychen901105/AttributeString/trunk</string>
+		<key>8B536BB6-F76B-4FA2-8975-CFEDA37F6F5E</key>
+		<string>https://github.com/perrychen901105/AttributeString.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>RichEditor/RichEditor.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>A15DEEC7-8A5D-4FAF-9E46-595046BF27A6</key>
+		<key>8B536BB6-F76B-4FA2-8975-CFEDA37F6F5E</key>
 		<string>../../..</string>
 	</dict>
-	<key>IDESourceControlProjectRepositoryRootDictionary</key>
-	<dict>
-		<key>A15DEEC7-8A5D-4FAF-9E46-595046BF27A6</key>
-		<string>https://github.com/perrychen901105/AttributeString</string>
-	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/perrychen901105/AttributeString/trunk/RichEditor/RichEditor.xcodeproj</string>
+	<string>https://github.com/perrychen901105/AttributeString.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>A15DEEC7-8A5D-4FAF-9E46-595046BF27A6</string>
+	<string>8B536BB6-F76B-4FA2-8975-CFEDA37F6F5E</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
-			<key>IDESourceControlRepositoryBranchesRelativeLocationKey</key>
-			<string>branches</string>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.subversion</string>
-			<key>IDESourceControlRepositoryTrunkRelativeLocationKey</key>
-			<string>trunk</string>
+			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>A15DEEC7-8A5D-4FAF-9E46-595046BF27A6</string>
+			<string>8B536BB6-F76B-4FA2-8975-CFEDA37F6F5E</string>
 			<key>IDESourceControlWCCName</key>
 			<string>AttributeString</string>
 		</dict>

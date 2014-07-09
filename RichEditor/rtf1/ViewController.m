@@ -10,21 +10,15 @@
 #import "FontsViewController.h"
 #import "ColorViewController.h"
 
-@interface ViewController () <UITextViewDelegate>
+@interface ViewController () <UITextViewDelegate,FontsViewControllerDelegate>
 {
     IBOutlet UITextView* editor;
     IBOutlet UIView* toolbar;
-    NSArray *fontsDataSource;
+    
 }
 @end
 
 @implementation ViewController
-
-- (void)awakeFromNib
-{
-    fontsDataSource = @[@[@12, @14, @18, @24],
-                        @[@"Arial", @"AmericanTypewriter", @"Helvetica", @"Zapfino"]];
-}
 
 - (void)viewDidLoad
 {
@@ -146,6 +140,12 @@
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    if ([segue.identifier compare:@"fonts"] == NSOrderedSame) {
+        FontsViewController *screen = segue.destinationViewController;
+        screen.delegate = self;
+        screen.preselectedFont = editor.typingAttributes[NSFontAttributeName];
+        return;
+    }
 }
 
 @end
