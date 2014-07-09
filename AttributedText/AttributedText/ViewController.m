@@ -52,21 +52,47 @@
     label.attributedText = aString;
     */
     
+    
+    /*
+     * 格式化段落
+     *
     NSShadow *myShadow = [[NSShadow alloc] init];
     myShadow.shadowBlurRadius = 2.0;
     myShadow.shadowColor = [UIColor grayColor];
     myShadow.shadowOffset = CGSizeMake(1, 1);
     
+    NSMutableParagraphStyle *paragraph = [[NSMutableParagraphStyle alloc] init];
+    paragraph.alignment = NSTextAlignmentJustified;   // 是内容适应文本大小
+    paragraph.firstLineHeadIndent = 20.0f;
+    paragraph.paragraphSpacingBefore = 16.0;
+    
+    paragraph.lineSpacing = 4;
+    paragraph.hyphenationFactor = 1.0;  // 断字因子 越接近1， 断字越多
+    
     NSDictionary *attributes = @{
                                  NSForegroundColorAttributeName: [UIColor colorWithRed:0.2 green:0.239 blue:0.451 alpha:1],
-                                 NSShadowAttributeName: myShadow};
+                                 NSShadowAttributeName: myShadow,
+                                 NSParagraphStyleAttributeName: paragraph};
+
     
     NSString* txt = @"(UIFont*) Sets the font to render the text. If you want bold or italic text provide the correct name for each given font. These vary depending on the font family.\nFor example for the \"Helvetica Neue\" font you need to provide \"HelveticaNeue-Bold\" name for a bolded font, and \"HelveticaNeue-Italic\" for italic font.\nHowever, if you would like to use \"Courier New\", the font names are: \"CourierNewPS- ItalicMT\" for italic and \"CourierNewPS-BoldMT\" for bold.";
     
     NSAttributedString *aString = [[NSAttributedString alloc] initWithString:txt attributes: attributes];
     label.attributedText = aString;
+    */
     
+    NSDictionary *redAttrs = @{
+                               NSForegroundColorAttributeName: [UIColor redColor],};
+    NSDictionary *greenAttrs = @{
+                                 NSForegroundColorAttributeName: [UIColor greenColor],};
     
+    NSMutableAttributedString *aString = [[NSMutableAttributedString alloc] initWithString:@"Red AND green text!"];
+    
+    [aString setAttributes:redAttrs range:NSMakeRange(0, 3)];
+    [aString setAttributes:greenAttrs range:NSMakeRange(8, 5)];
+    
+    label.attributedText = aString;
+
 }
 
 - (void)didReceiveMemoryWarning
