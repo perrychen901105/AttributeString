@@ -10,7 +10,7 @@
 #import "FontsViewController.h"
 #import "ColorViewController.h"
 
-@interface ViewController () <UITextViewDelegate,FontsViewControllerDelegate>
+@interface ViewController () <UITextViewDelegate,FontsViewControllerDelegate,ColorViewControllerDelegate>
 {
     IBOutlet UITextView* editor;
     IBOutlet UIView* toolbar;
@@ -138,12 +138,32 @@
 {
 }
 
+// delegate methods
+- (void)selectedFontName:(NSString *)fontName withSize:(NSNumber *)fontSize
+{
+    NSDictionary *fontStyle = @{
+                                NSFontAttributeName: [UIFont fontWithName:fontName size:[fontSize floatValue]]};
+    [self applyAttributesToTextArea:fontStyle];
+}
+
+- (void)selectedColor:(UIColor *)color
+{
+    NSDictionary *colorStyle = @{
+                                 NSForegroundColorAttributeName: color};
+    [self applyAttributesToTextArea:colorStyle];
+}
+
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier compare:@"fonts"] == NSOrderedSame) {
         FontsViewController *screen = segue.destinationViewController;
         screen.delegate = self;
         screen.preselectedFont = editor.typingAttributes[NSFontAttributeName];
+        return;
+    }
+    if ([segue.identifier compare:@"colors"] == NSOrderedSame) {
+        ColorViewController *screen = segue.destinationViewController;
+        screen.delegate = self;
         return;
     }
 }

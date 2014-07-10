@@ -29,6 +29,7 @@
 		9CE256AF15D1683B000A6B33 /* FontsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE256AE15D1683B000A6B33 /* FontsViewController.m */; };
 		9CE256B615D17407000A6B33 /* ColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE256B515D17407000A6B33 /* ColorViewController.m */; };
 		9CE256C315D29BAA000A6B33 /* FileListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE256C215D29BAA000A6B33 /* FileListViewController.m */; };
+		C2CC9933196E32CF0096836E /* NSObject+AutoCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = C2CC9932196E32CF0096836E /* NSObject+AutoCoding.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,8 @@
 		9CE256B515D17407000A6B33 /* ColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorViewController.m; sourceTree = "<group>"; };
 		9CE256C115D29BAA000A6B33 /* FileListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileListViewController.h; sourceTree = "<group>"; };
 		9CE256C215D29BAA000A6B33 /* FileListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileListViewController.m; sourceTree = "<group>"; };
+		C2CC9931196E32CF0096836E /* NSObject+AutoCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AutoCoding.h"; sourceTree = "<group>"; };
+		C2CC9932196E32CF0096836E /* NSObject+AutoCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AutoCoding.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				9CE2568515D14ED1000A6B33 /* MainStoryboard.storyboard */,
+				C2CC9931196E32CF0096836E /* NSObject+AutoCoding.h */,
+				C2CC9932196E32CF0096836E /* NSObject+AutoCoding.m */,
 				9CE2568215D14ED1000A6B33 /* AppDelegate.h */,
 				9CE2568315D14ED1000A6B33 /* AppDelegate.m */,
 				9CE2568815D14ED1000A6B33 /* ViewController.h */,
@@ -234,6 +239,7 @@
 				9CE2568415D14ED1000A6B33 /* AppDelegate.m in Sources */,
 				9CE2568A15D14ED1000A6B33 /* ViewController.m in Sources */,
 				9CE256AF15D1683B000A6B33 /* FontsViewController.m in Sources */,
+				C2CC9933196E32CF0096836E /* NSObject+AutoCoding.m in Sources */,
 				9CE256B615D17407000A6B33 /* ColorViewController.m in Sources */,
 				9CE256C315D29BAA000A6B33 /* FileListViewController.m in Sources */,
 			);
